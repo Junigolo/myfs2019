@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> j quety	</title>
+	<script  src="../jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+	<script>
+		function escribir()
+		{
+			var txt = $('#tex1').val();
+			$('#texinput').html(txt);
+		}
+		$(document).ready(function()
+		{
+			$('#btn1').click(function()
+			{
+				$('#div1').html('<h1>TITULO DE PRUEBA</h1><p>Este es el neuvo parrafo</p>');
+			});
+			$('#btn2').click(function()
+			{
+				$('#div1').css({'background-color':'blue','font-size':'50px'});
+				$('#p1').css('font-size','200%')
+			});
+			$('#tex1').onblur(function()
+			{
+				$('#texinput').value('sss')
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn1"  class="btn btn-warning"> Ejecutar HTML </button>
+	<button id="btn2" class="btn btn-primary"> Ejecutar CSS </button>
+	<div id="div1">
+	</div>
+	<p id="p1"> MI parrafo </p>
+	<input type="text" id="tex1" onkeyup="escribir()">
+	<p id="texinput"> texto vacio</p>
+
+</body>
+</html>

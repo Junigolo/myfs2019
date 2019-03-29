@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CELDAS -- examples</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	<!--  
+  	comentarios
+  	esta es la libreria de iconnos..
+  	---> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  	<style>
+  		.fondoimg{
+  			background-image: url("../images/servicios.jpg");
+  		}
+		#imagen
+  			{ display: none }
+  		@media(max-width: 500px){
+ 			#demo
+ 			{ display: none }
+ 			#imagen
+ 			{ display: initial }
+  		};
+
+
+
+  	</style>
+</head>
+<body>
+	<div class="container">
+		<img id="imagen" src="../images/servicios1.jpg" class="img-fluid">
+	</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><i class="fas fa-clock"></i> Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+
+        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="#"><i class="fas fa-clock"></i>Link</a>
+
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-car">Disabled</a>
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0"  type="submit"><i class="fas fa-save"></i>Search</button>
+    </form>
+  </div>
+</nav>
+
+  	<!--  
+  	media queries permiten obtener el tamaño de 
+  	pantalla esta usando el usuario
+  	segun sea mostrar algunas cosas... ojo menu dinamico..
+  	---> 
+
+
+
+
+	<div class="row">
+	  <div class="col-md-4">
+	  		<p> <i class="fas fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	 </div>
+	 <div class="col-md-4">
+	  		<img src="../images/productos1.png" class="img-fluid rounded-circle">
+	</div>
+  	<div class="col-md-4">
+  		<div class="row">
+	  		<div class="col-md-4">
+	  			<p>una columna</p>
+	  		</div>
+	  		<div class="col-md-4">
+	  			<p>otra columa</p>
+	  		</div>
+	  		<div class="col-md-4">
+	  			<p>otrasss columna</p>
+	  		</div>
+		<div class="row">
+	  		<div class="col-md-10">
+	  			<p>una columnaaasasaasa</p>
+	  		</div>
+	  		<div class="col-md-2">
+	  			<p>otrasasa columa</p>
+	  		</div>
+
+	  	</div>
+
+
+
+	</div>
+</div>
+// befuncky.com
+// 
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+		<div class="carousel-inner">
+    		<div class="carousel-item active">
+      			<img src="../images/productos1.png" class="rounded-pills" alt="Productos">
+      			<div class="carousel-caption">
+    				<h3 style="background-color: :red">Los Angeles</h3>
+    				<p style="background-color: blue">We had such a great time in LA!</p>
+  				</div>
+    		</div>
+    		<div class="carousel-item">
+      			<img src="../images/servicios1.jpg" alt="Servicios">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="../images/hardware1.jpg" alt="Hardware">
+    		</div>
+
+<!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+   </div>
+
+
+<div class="media">
+  <img src="../images/software1.jpg" class="mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    <div class="media mt-3">
+      <a class="mr-3" href="#">
+        <img src="../images/hardware1.jpg" class="mr-3" alt="...">
+      </a>
+      <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar-example3" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="nav nav-pills flex-column">
+    <a class="nav-link" href="#item-1">Item 1</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+      <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+    </nav>
+    <a class="nav-link" href="#item-2">Item 2</a>
+    <a class="nav-link" href="#item-3">Item 3</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+      <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+    </nav>
+  </nav>
+</nav>
+
+
+
+
+</div>
+
+<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+  <h4 id="item-1">Item 1</h4>
+  <p>...</p>
+  <h5 id="item-1-1">Item 1-1</h5>
+  <p>...</p>
+  <h5 id="item-1-2">Item 1-2</h5>
+  <p>...</p>
+  <h4 id="item-2">Item 2</h4>
+  <p>...</p>
+  <h4 id="item-3">Item 3</h4>
+  <p>...</p>
+  <h5 id="item-3-1">Item 3-1</h5>
+  <p>...</p>
+  <h5 id="item-3-2">Item 3-2</h5>
+  <p>...</p>
+</div>
+
+</body>
+</html>
